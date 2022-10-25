@@ -1,0 +1,21 @@
+{
+    "name": "nicmaxcarter/simple-queue",
+    "description": "Personal queue for small scale tasks",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nicmaxcarter\\SimpleQueue\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max Carter",
+            "email": "nicmaxcarter@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "doctrine/cache": "1.11.3"
+    }
+}
