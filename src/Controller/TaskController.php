@@ -7,7 +7,7 @@ use Nicmaxcarter\SimpleQueue\Entity\Task;
 use Nicmaxcarter\ApiTool\Api;
 use GuzzleHttp\Client as Guzzle;
 
-abstract class BaseTaskController
+abstract class TaskController
 {
     protected $task;
     protected $workerurl;
