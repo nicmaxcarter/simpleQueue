@@ -1,10 +1,10 @@
 <?php
 
-namespace Nicmaxcarter\SimpleQueue;
+namespace Nicmaxcarter\SimpleQueue\Entity;
 
 use Doctrine\DBAL\Connection as DB;
 use Psr\Container\ContainerInterface as Container;
-use Nicmaxcarter\SimpleQueue\Base;
+use Nicmaxcarter\SimpleQueue\Entity\Base;
 
 class Worker extends Base
 {

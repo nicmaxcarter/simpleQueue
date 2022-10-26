@@ -1,9 +1,9 @@
 <?php
 
-namespace Nicmaxcarter\SimpleQueue;
+namespace Nicmaxcarter\SimpleQueue\Entity;
 
 use Doctrine\DBAL\Connection as DB;
-use Nicmaxcarter\SimpleQueue\Base;
+use Nicmaxcarter\SimpleQueue\Entity\Base;
 
 class Task extends Base
 {

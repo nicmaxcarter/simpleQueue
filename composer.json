@@ -16,9 +16,11 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "nicmaxcarter/apitool": "dev-main",
         "doctrine/orm": "^2",
         "doctrine/cache": "1.11.3",
         "robmorgan/phinx": "^0.12.10",
-        "psr/container": "*"
+        "psr/container": "*",
+        "guzzlehttp/guzzle": "^7.0"
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nicmaxcarter\SimpleQueue;
+namespace Nicmaxcarter\SimpleQueue\Entity;
 
 class QueueTool
 {
