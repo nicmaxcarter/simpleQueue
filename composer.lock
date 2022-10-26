@@ -1709,12 +1709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicmaxcarter/Api-Auth-Middleware.git",
-                "reference": "ccf09711c8d30fcc8adb994814c665669df6dba3"
+                "reference": "cfc9fe4c147ec7cc893766a685a2da87b54ee092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicmaxcarter/Api-Auth-Middleware/zipball/ccf09711c8d30fcc8adb994814c665669df6dba3",
-                "reference": "ccf09711c8d30fcc8adb994814c665669df6dba3",
+                "url": "https://api.github.com/repos/nicmaxcarter/Api-Auth-Middleware/zipball/cfc9fe4c147ec7cc893766a685a2da87b54ee092",
+                "reference": "cfc9fe4c147ec7cc893766a685a2da87b54ee092",
                 "shasum": ""
             },
             "require": {
@@ -1727,7 +1727,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Nicmaxcarter\\Apiauthmiddleware\\": "src/"
+                    "Nicmaxcarter\\ApiAuthMiddleware\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1745,7 +1745,7 @@
                 "issues": "https://github.com/nicmaxcarter/Api-Auth-Middleware/issues",
                 "source": "https://github.com/nicmaxcarter/Api-Auth-Middleware/tree/master"
             },
-            "time": "2022-10-26T15:26:28+00:00"
+            "time": "2022-10-26T15:43:44+00:00"
         },
         {
             "name": "nicmaxcarter/apitool",

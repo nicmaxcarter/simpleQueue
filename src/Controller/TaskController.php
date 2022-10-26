@@ -2,7 +2,6 @@
 
 namespace Nicmaxcarter\SimpleQueue\Controller;
 
-use Psr\Container\ContainerInterface as Container;
 use Nicmaxcarter\SimpleQueue\Entity\Task;
 use Nicmaxcarter\ApiTool\Api;
 use GuzzleHttp\Client as Guzzle;
@@ -16,7 +15,6 @@ abstract class TaskController
 
     public function __construct(
         Task $task,
-        Container $container,
         $secretNumber
     )
     {
@@ -24,7 +22,6 @@ abstract class TaskController
 
         // this is that old shit
         // we don't do this anymore
-        //$this->workerurl = $container->get('workerurl');
 
         $this->setWorkerData();
 
