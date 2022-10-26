@@ -2,11 +2,12 @@
 
 namespace Nicmaxcarter\SimpleQueue\Controller;
 
+use Nicmaxcarter\SimpleQueue\Controller\Base;
 use Nicmaxcarter\SimpleQueue\Entity\Worker;
 use Nicmaxcarter\SimpleQueue\Entity\TaskQueue;
 use Nicmaxcarter\ApiTool\Api;
 
-abstract class WorkerTaskController
+abstract class WorkerTaskController extends Base
 {
     protected $worker;
     protected $queue;

@@ -2,11 +2,12 @@
 
 namespace Nicmaxcarter\SimpleQueue\Controller;
 
+use Nicmaxcarter\SimpleQueue\Controller\Base;
 use Nicmaxcarter\SimpleQueue\Entity\Task;
 use Nicmaxcarter\ApiTool\Api;
 use GuzzleHttp\Client as Guzzle;
 
-abstract class TaskController
+abstract class TaskController extends Base
 {
         protected $task;
     protected $workerurl;
