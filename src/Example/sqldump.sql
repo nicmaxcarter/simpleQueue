@@ -1,4 +1,4 @@
--- Adminer 4.7.7 MySQL dump
+-- Adminer 4.8.1 MySQL 10.7.4-MariaDB dump
 
 SET NAMES utf8;
 SET time_zone = '+00:00';
@@ -11,7 +11,7 @@ CREATE TABLE `action` (
   `name` varchar(36) NOT NULL,
   `description` varchar(128) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 
 DROP TABLE IF EXISTS `task_queue`;
@@ -35,7 +35,20 @@ CREATE TABLE `task_queue` (
   KEY `company` (`company`),
   CONSTRAINT `task_queue_ibfk_1` FOREIGN KEY (`action`) REFERENCES `action` (`id`),
   CONSTRAINT `task_queue_ibfk_2` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 
--- 2022-10-26 13:09:39
+DROP TABLE IF EXISTS `worker`;
+CREATE TABLE `worker` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `ip_address` varchar(36) NOT NULL,
+  `url` varchar(72) NOT NULL,
+  `available` tinyint(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ip_address` (`ip_address`),
+  UNIQUE KEY `url` (`url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+
+-- 2022-10-26 13:25:29
+
