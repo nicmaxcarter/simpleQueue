@@ -9,14 +9,15 @@ use GuzzleHttp\Client as Guzzle;
 
 abstract class TaskController
 {
-    protected $task;
+        protected $task;
     protected $workerurl;
     protected $taskId;
     protected $workerId;
 
     public function __construct(
         Task $task,
-        Container $container
+        Container $container,
+        $secretNumber
     )
     {
         $this->task = $task;
@@ -26,6 +27,8 @@ abstract class TaskController
         //$this->workerurl = $container->get('workerurl');
 
         $this->setWorkerData();
+
+        $this->secretNumber = $secretNumber;
     }
 
     abstract public function createTask(
@@ -79,7 +82,10 @@ abstract class TaskController
             'POST',
             $url,
             [
-                'body' => Api::AuthPostData($addData),
+                'body' => Api::AuthPostData(
+                    $this->secretNumber,
+                    $addData
+                ),
                 'timeout' => $timeout
             ]
         );
@@ -107,7 +113,10 @@ abstract class TaskController
                 'POST',
                 $url,
                 [
-                    'body' => Api::AuthPostData($addData),
+                    'body' => Api::AuthPostData(
+                        $this->secretNumber,
+                        $addData
+                    ),
                     'timeout' => $timeout
                 ]
             );

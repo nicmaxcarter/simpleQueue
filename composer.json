@@ -17,6 +17,7 @@
     "minimum-stability": "stable",
     "require": {
         "nicmaxcarter/apitool": "dev-main",
+        "nicmaxcarter/apiauthmiddleware": "dev-master",
         "doctrine/orm": "^2",
         "doctrine/cache": "1.11.3",
         "robmorgan/phinx": "^0.12.10",
