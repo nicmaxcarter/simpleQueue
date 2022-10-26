@@ -16,6 +16,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "doctrine/cache": "1.11.3"
+        "doctrine/orm": "^2",
+        "doctrine/cache": "1.11.3",
+        "robmorgan/phinx": "^0.12.10",
+        "psr/container": "*"
     }
 }
